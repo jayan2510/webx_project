@@ -1,0 +1,45 @@
+/* Custom styles for the inventory management app */
+
+/* Add some spacing to the bottom of the page */
+body {
+    margin-bottom: 50px;
+}
+
+/* Style for low stock items */
+.text-danger {
+    font-weight: bold;
+}
+
+/* Animations for alerts */
+.alert {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effects */
+.btn {
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Table hover effects */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
